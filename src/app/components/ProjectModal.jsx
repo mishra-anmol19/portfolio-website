@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const ProjectModal = ({ project, onClose }) => {
-  if (!project) return null;
 const [showAccessModal, setShowAccessModal] = useState(false);
+  if (!project) return null;
+
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
